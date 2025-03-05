@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+  "build": "next build && next export",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out"
+},
   "homepage": "https://nbagkar.github.io/my-site",
   "dependencies": {
     "next": "15.2.0",
